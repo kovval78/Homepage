@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Josefin+Sans&family=Roboto+Mono:wght@100;400&display=swap"
+        rel="stylesheet">
+    <title>Homepage - Kamil Kowalczyk</title>
+</head>
+
+<body>
+
+    <header class="title">
+        <h2 class="title__first-part">The personal website of</h2>
+        <h1 class="title__second-part">Kamil Kowalczyk</h1>
+    </header>
+
+
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="/" class="menu__link">Curriculum Vitae</a></li>
+            <li class="menu__list"><a href="/" class="menu__link">Learning</a></li>
+            <li class="menu__list"><a href="/" class="menu__link">Other</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <aside class="aside-left">
+            <img src="./../assets/01_photo_Kamil_Kowalczyk.jpg" alt="Photo of Kamil Kowalczyk"
+                class="aside-left__photo">
+        </aside>
+        <section class="about-me">
+            <h2 class="about-me__introduction">
+                I'm Kamil, and I am doing everything to make my childhood dream come true. Write code. My plan is to
+                specialize in the front-end development first and then go deeper :-). I spend every moment making it a
+                reality.</h2>
+
+            <p class="about-me__info-first">After 11 years of working at the interface between IT and project
+                management, I
+                decided to develop my many years of interests and switch to a front-end developer. This decision
+                coincided with the arrival of my daughter's world. The last two years, apart from deepening my knowledge
+                of IT, have taught me to manage myself very effectively in time.</p>
+
+            <p class="about-me__info_second">My previous professional experience includes:
+                <span>- project management: implementation and coordination of online research (panel, mailing to the customer
+                base, Real Time Sampling), work with the use of Mantis, Jira</span>
+                <span>- development activities: initiating and coordinating processes related to the implementation of new and non-standard IT solutions supporting online research</span>
+                <span>- participation in recruitment processes, introducing new employees, looking after apprentices
+                <span>- work with external clients and subcontractors, valuation</span></p>
+        </section>
+        <aside class="aside-right">
+            <p class="aside-right__length">Bio length</p>
+            <label for="short" class="aside-right__label">Short
+                <input class="aside-right__input" id="short" type="radio" checked>
+                <span class="aside-right__span"></span>
+            </label>
+            <label for="medium" class="aside-right__label">Medium
+                <input class="aside-right__input" id="medium" type="radio">
+                <span class="aside-right__span"></span>
+            </label>
+            <label for="long" class="aside-right__label">Long
+                <input class="aside-right__input" id="long" type="radio">
+                <span class="aside-right__span"></span>
+            </label>
+
+            <p class="aside-right__style">Style</p>
+            <label for="first" class="aside-right__label">1st Person
+                <input class="aside-right__input" id="first" type="radio" checked>
+                <span class="aside-right__span"></span>
+            </label>
+            <label for="third" class="aside-right__label">3rd Person
+                <input class="aside-right__input" id="third" type="radio">
+                <span class="aside-right__span"></span>
+            </label>
+
+            <p class="aside-right__code">Code</p>
+            <label for="rendered" class="aside-right__label">Rendered
+                <input class="aside-right__input" id="rendered" type="radio" checked>
+                <span class="aside-right__span"></span>
+            </label>
+            <label for="html" class="aside-right__label">HTML
+                <input class="aside-right__input" id="html" type="radio">
+                <span class="aside-right__span"></span>
+            </label>
+            <label for="markdown" class="aside-right__label">Markdown
+                <input class="aside-right__input" id="markdown" type="radio">
+                <span class="aside-right__span"></span>
+            </label>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <a href="mailto: kovval78@gmail.com">Mail me</a>
+        <a href="https://codepen.io/kovval78">Codepen</a>
+        <a href="https://github.com/kovval78">GitHub</a>
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

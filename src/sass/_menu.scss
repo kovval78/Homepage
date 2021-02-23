@@ -1,0 +1,62 @@
+.menu {
+    @include flexCenter;
+    justify-content: space-around;
+    margin: 10px 0;
+    transition: all .5s;
+
+    &__hamb {
+        display: block;
+        position: relative;
+        height: 35px;
+        width: 40px;
+        cursor: pointer;
+        transition: opacity .5s;
+
+        @include mq(768px) {
+            opacity: 0;
+        }
+    }
+
+    &:hover .menu__link {
+        opacity: 1;
+    }
+
+    &__hamb-1,
+    &__hamb-2,
+    &__hamb-3 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 25px;
+        height: 2px;
+        background-color: white;
+    }
+
+    &__hamb-2 {
+        top: 25%;
+    }
+
+    &__hamb-3 {
+        top: 75%;
+    }
+
+
+
+    &__link {
+        background-color: royalblue;
+        padding: 7px;
+        font-size: .7rem;
+        letter-spacing: 2px;
+        color: $link-color;
+        text-decoration: none;
+        display: block;
+        transition: opacity .5s;
+        opacity: 0;
+
+        @include mq(768px) {
+            opacity: 1;
+            font-size: 1rem;
+        }
+
+    }
+}

@@ -1,7 +1,13 @@
 .main {
     display: grid;
-    grid-template-columns: minmax(min-content, max-content) minmax(min-content, 1fr);
+    grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
+    grid-gap: 0 10px;
     margin: 40px 20px;
+
+}
+
+.hide {
+    display: none;
 }
 
 
@@ -10,18 +16,55 @@
 }
 
 .aboutMe {
-    // font-size: .6rem;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-family: $name-font;
     padding-right: 10px;
 
-&--languageHtml {
+
+    &--languageHtml {
         white-space: pre-wrap;
         text-align: left;
         overflow-x: hidden;
-}
+    }
 }
 
-// span {
-//     overflow-x: hidden;
-//     white-space: wrap;
-//     text-align: left;
-// }
+.aside-right {
+    // min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+    font-size: .7rem;
+    font-family: $name-font;
+
+    &__bioH3 {
+        color: $red-color;
+        border-bottom: 2px solid $radioText-color;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+    }
+
+    label {
+        color: $radioText-color;
+        font-size: .9rem;
+    }
+
+    &__styleH3 {
+        color: $link-markdown;
+        border-bottom: 2px solid $radioText-color;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+
+    }
+
+    div {
+        padding-bottom: 4px;
+    }
+
+
+    &__bioLength {
+        margin-bottom: 100%;
+    }
+}

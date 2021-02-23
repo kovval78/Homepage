@@ -1,25 +1,25 @@
 .menu {
     @include flexCenter;
-    justify-content: space-around;
-    margin: 10px 0;
+    justify-content: space-between;
     transition: all .5s;
+    width: 90vw;
+    margin: 10px auto 0;
 
     &__hamb {
         display: block;
         position: relative;
+        left: 5px;
         height: 35px;
-        width: 40px;
+        width: 25px;
         cursor: pointer;
         transition: opacity .5s;
 
         @include mq(768px) {
             opacity: 0;
         }
+
     }
 
-    &:hover .menu__link {
-        opacity: 1;
-    }
 
     &__hamb-1,
     &__hamb-2,
@@ -40,11 +40,15 @@
         top: 75%;
     }
 
+    &:hover .menu__link {
+        opacity: 1;
+    }
+
 
 
     &__link {
         background-color: royalblue;
-        padding: 7px;
+        padding: 6px;
         font-size: .7rem;
         letter-spacing: 2px;
         color: $link-color;
@@ -53,10 +57,10 @@
         transition: opacity .5s;
         opacity: 0;
 
+
         @include mq(768px) {
             opacity: 1;
             font-size: 1rem;
         }
-
     }
 }

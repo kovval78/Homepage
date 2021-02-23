@@ -1,0 +1,27 @@
+.main {
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content) minmax(min-content, 1fr);
+    margin: 40px 20px;
+}
+
+
+.aside-left {
+    display: none;
+}
+
+.aboutMe {
+    // font-size: .6rem;
+    padding-right: 10px;
+
+&--languageHtml {
+        white-space: pre-wrap;
+        text-align: left;
+        overflow-x: hidden;
+}
+}
+
+// span {
+//     overflow-x: hidden;
+//     white-space: wrap;
+//     text-align: left;
+// }

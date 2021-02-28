@@ -1,25 +1,25 @@
 .main {
+    flex-grow: 1 ;
     display: grid;
     grid-template-columns: minmax(min-content, max-content) minmax(min-content, max-content);
-    grid-gap: 0 10px;
+    place-content: start center ;
     margin: 40px 20px;
-
 }
 
 .hide {
     display: none;
 }
 
-
 .aside-left {
     display: none;
 }
 
 .aboutMe {
+    width: 60vw;
     font-size: 1rem;
     line-height: 1.7rem;
     font-family: $name-font;
-    padding-right: 10px;
+    padding-right: 30px;
 
 
     &--languageHtml {
@@ -30,12 +30,9 @@
 }
 
 .aside-right {
-    // min-height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-
     font-size: .7rem;
     font-family: $name-font;
 
@@ -56,12 +53,8 @@
         border-bottom: 2px solid $radioText-color;
         text-transform: uppercase;
         margin-bottom: 7px;
-
     }
 
-    div {
-        padding-bottom: 4px;
-    }
 
 
     &__bioLength {

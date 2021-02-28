@@ -1,66 +1,19 @@
 .menu {
-    @include flexCenter;
-    justify-content: space-between;
-    transition: all .5s;
-    width: 90vw;
-    margin: 10px auto 0;
 
-    &__hamb {
-        display: block;
-        position: relative;
-        left: 5px;
-        height: 35px;
-        width: 25px;
-        cursor: pointer;
-        transition: opacity .5s;
-
-        @include mq(768px) {
-            opacity: 0;
-        }
-
-    }
-
-
-    &__hamb-1,
-    &__hamb-2,
-    &__hamb-3 {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 25px;
-        height: 2px;
-        background-color: white;
-    }
-
-    &__hamb-2 {
-        top: 25%;
-    }
-
-    &__hamb-3 {
-        top: 75%;
-    }
-
-    &:hover .menu__link {
-        opacity: 1;
-    }
-
+    text-align: center;
+    background: lighten($color: #000000, $amount: 1);
+    padding: 12px;
 
 
     &__link {
-        background-color: royalblue;
-        padding: 6px;
-        font-size: .7rem;
-        letter-spacing: 2px;
-        color: $link-color;
         text-decoration: none;
-        display: block;
-        transition: opacity .5s;
-        opacity: 0;
-
-
-        @include mq(768px) {
-            opacity: 1;
-            font-size: 1rem;
-        }
+        background: #333;
+        border-radius: 5px;
+        color: white;
+        padding: 3px 8px;
+        margin: 0 clamp(0.3rem, calc(0.3714rem + 1.9048vw), 2rem);
+        font-size: clamp(0.4rem, calc(0.4714rem + 1.9048vw), 1.2rem);
     }
+
+
 }
